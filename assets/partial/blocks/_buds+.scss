@@ -1,0 +1,147 @@
+
+.buds {
+    background: linear-gradient($motto-section-bg-color, $buds-bg-color-gradient);
+    @include dFlex(column, center);
+    position: relative;
+    height: $buds-height-mobile;
+
+    @media screen and (max-width:470px) {
+        height: $buds-height-mobile-1;
+    }
+
+    @media screen and (min-width:768px){
+        height: $buds-height-desktop;
+    }
+
+
+
+
+
+    &__images {
+        @include dFlex(row, space-between, flex-start);
+    }
+
+
+
+
+
+    &__leftimage {
+        filter: saturate(0);
+        width: $buds-left-image-width-mobile;
+
+        @media screen and (max-width:470px) {
+            width: $buds-left-image-width-mobile-1;
+        }
+
+        @media screen and (min-width:768px){
+            width: $buds-left-image-width-desktop;
+        }
+    }
+
+
+
+
+
+    &__rightimage {
+        width: $buds-right-image-width;
+        margin-right: $buds-right-image-margin-right;
+        transform: rotate(10deg);
+        justify-self: flex-start;
+
+    }
+
+
+
+
+
+    &__redbox {
+        background-color: $buds-redbox-bg-color;
+        position: absolute;
+        width: $buds-redbox-width;
+        left: 0;
+        height: $buds-redbox-height-mobile;
+        top: $buds-redbox-top-mobile;
+
+        @media screen and (max-width:470px) {
+            height: $buds-redbox-height-mobile-1;
+        }
+
+        @media screen and (min-width:768px){
+            height: $buds-redbox-height-dektop;
+            top: $buds-redbox-top-desktop;
+        }
+
+
+    }
+
+
+
+
+
+    &__text {
+        position: absolute;
+        top: $buds-text-top-mobile;
+        left: $buds-text-left-mobile;
+
+        @media screen and (max-width:470px) {
+            top: $buds-text-top-mobile-1;
+            left: $buds-text-left-mobile-1;
+        }
+
+        @media screen and (min-width:768px){
+            top: $buds-text-top-desktop;
+            left: $buds-text-left-desktop;
+
+        }
+
+
+
+
+
+        &__title {
+            background: linear-gradient(20deg, rgba(0, 0, 0, 0.868), rgba(0, 0, 0, 0.128));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+            margin-bottom: 0;
+            font-size: $buds-title-font-size-mobile;
+
+            @media screen and (max-width:470px) {
+                font-size: $buds-title-font-size-mobile-1;
+            }
+
+            @media screen and (min-width:768px){
+                font-size: $buds-title-font-size-desktop;
+            }
+
+        }
+
+    }
+
+
+
+
+
+    &__btn {
+        position: absolute;
+        @include buttonStyle();
+        bottom: $buds-btn-bottom;
+        padding: $buds-btn-padding-mobile;
+        right: $buds-btn-right-mobile;
+        font-size: $buds-btn-fontsize-mobile;
+
+        @media screen and (max-width:470px) {
+            padding: $buds-btn-padding-mobile-1;
+            right: $buds-btn-right-mobile-1;
+        }
+
+        @media screen and (min-width:768px){
+            padding: $buds-btn-padding-desktop;
+            font-size: $buds-btn-fontsize-desktop;
+            right: $buds-btn-right-desktop;
+
+        }
+
+    }
+
+}

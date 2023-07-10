@@ -1,0 +1,75 @@
+.registerSection {
+    background: linear-gradient($popular-bg-color 50%, $register-bg-color);
+    color: $register-color;
+    @include dFlex(row, center, center);
+    height: $register-height-mobile;
+
+    @media screen and (max-width:850px) {
+        height: $register-height-tablet;
+    }
+
+    @media screen and (min-width:850px){
+        height: $register-height-desktop;
+    }
+
+    &__register {
+        position: relative;
+
+
+        &__image {
+            width: $register-image-width;
+            position: relative;
+            z-index: 1;
+        }
+
+        &__btn {
+            @include buttonStyle();
+            color: $register-btn-color;
+            position: absolute;
+            bottom: $register-btn-bottom;
+            right: $register-btn-right;
+            font-size: $register-btn-font-size-mobile;
+            padding: $register-btn-padding-mt;
+
+            @media (min-width:580px) and (max-width:850px) {
+                margin-right: $register-btn-margin-right-mt;
+                font-size: $register-btn-font-size-tablet;
+            }
+
+            @media screen and (min-width:850px){
+                padding: $register-btn-padding-desktop;
+                font-size: $register-btn-font-size-desktop;
+            }
+
+
+
+        }
+
+        &__heading {
+            position: absolute;
+            top: $register-heading-top-mobile;
+            font-size: $register-heading-font-size-mobile;
+            left: $register-heading-left-mt;
+            padding-right: $register-heading-padding-right-mt;
+
+            @media (min-width:580px) and (max-width:850px) {
+                top: $register-heading-top-tablet;
+                font-size: $register-heading-font-size-tablet;
+            }
+
+            @media screen and (min-width:850px){
+                top: $register-heading-top-tablet;
+                font-size: $register-heading-font-size-desktop;
+            }
+
+            @media (min-width:850px) and (max-width:922px) {
+                font-size: $register-heading-font-size-922;
+            }
+        }
+
+    }
+
+}
+
+
+

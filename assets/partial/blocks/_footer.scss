@@ -1,0 +1,152 @@
+//for all devices--------------------------------------------------------------------------------------------
+.footer {
+    background: linear-gradient($register-bg-color, rgb(255, 255, 255));
+    position: relative;
+    height: 50vh;
+
+    @media screen and (min-width:768px) {
+        height: 65vh;
+        font-size: 10px;
+    }
+
+    &__container {
+        @include dFlex(column, space-between, center);
+        width: 80%;
+        margin: auto;
+        padding-top: 20vh;
+
+        @media screen and (min-width:768px) {
+            height: 95%;
+        }
+
+        &__links {
+            width: 100%;
+            line-height: 2;
+
+            @media screen and (min-width:768px) {
+                @include dFlex(row, space-between, flex-start);
+            }
+
+            @media screen and (min-width:1000px) {
+                width: 800px;
+            }
+
+            & i {
+                font-size: 1.5rem;
+                padding: 15px;
+
+                @media screen and (min-width:768px) {
+                    font-size: 20px;
+                    padding: 10px;
+                }
+            }
+
+            &__column {
+                @include dFlex(column, space-between, center);
+                padding: 0;
+
+                @media screen and (min-width:768px) {
+                    @include dFlex(column, space-between, flex-start);
+                    border-left: 1px solid black;
+                    padding-left: 10px;
+
+                    .footer__container__links__column a:hover {
+                        border-bottom: .5px solid black;
+                    }
+                }
+
+                &:not(:last-child) {
+                    display: none;
+
+                    @media screen and (min-width:768px) {
+                        display: flex;
+                    }
+                }
+
+                & a>i:hover {
+                    transform: scale(1.06);
+                    transition: 100ms;
+                }
+
+                &__title {
+                    font-size: 20px;
+                    font-weight: 400;
+                    border-bottom: 1px solid black;
+                    padding: 0 50px;
+
+                    @media screen and (min-width:768px) {
+                        font-size: 12px;
+                        font-weight: 600;
+                        border-bottom: none;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+
+        &__logo {
+            width: 5%;
+            opacity: .5;
+            display: none;
+
+            @media screen and (min-width:768px) {
+                display: block;
+            }
+        }
+
+
+    }
+
+    &__goupbtn {
+        font-size: 25px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        padding: 10px;
+        @include textShadow(1rem, rgb(173, 86, 86));
+        @include dFlex(row, center, center);
+        transition: 200ms;
+        animation: goUpShadow 5s infinite linear;
+
+        &:hover {
+            font-size: 35px;
+            transition: 200ms;
+            animation-play-state: paused;
+        }
+
+
+    }
+
+}
+
+
+
+
+.flexfooter {
+    background: transparent;
+}
+
+
+
+
+
+// keyframes----------------------------------------------------------------------------------------------------------------------------------------------
+@keyframes goUpShadow {
+    25% {
+        @include textShadow(1rem, rgb(39, 136, 39))
+    }
+
+    50% {
+        @include textShadow(1rem, rgb(22, 22, 159))
+    }
+
+    75% {
+        @include textShadow(1rem, rgb(112, 112, 0))
+    }
+
+    100% {
+        @include textShadow(1rem, rgb(173, 86, 86))
+    }
+}
+

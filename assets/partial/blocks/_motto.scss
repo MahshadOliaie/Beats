@@ -1,0 +1,67 @@
+
+.motto {
+    @include dFlex(column, flex-start, center);
+    background-color: $motto-section-bg-color;
+    position: relative;
+    height: $motto-section-height-mobile;
+
+    @media screen and (min-width:768px){
+        height: $motto-section-height-desktop;
+
+        .motto__scroll{
+            width: 1px;
+            height: 100px;
+            position: absolute;
+            bottom: 7%;
+
+            &__inside{
+                width: 100%;
+                background-color: black;
+                animation: scroll 2s infinite;
+            }
+        }
+    }
+
+
+    &__image {
+        width: $motto-image-width-mobile;
+
+        @media screen and (min-width:768px){
+            width: $motto-image-width-desktop;
+        }
+    }
+
+    &__soundmatters {
+        position: absolute;
+        z-index: 200;
+        font-weight: $motto-text-font-weight;
+        background: linear-gradient($motto-text-bg-gradient);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: $motto-font-size-mobile;
+        margin-top: $motto-margin-top-mobile;
+        margin-left: $motto-margin-left-mobile;
+
+        @media screen and (min-width:768px){
+                font-size: $motto-font-size-desktop;
+                margin-top: $motto-margin-top-desktop;
+                margin-left: $motto-margin-left-desktop;
+    
+        }
+
+    }
+}
+
+
+
+//keyframes----------------------------------------------------------------------------------------------------------------------
+
+@keyframes scroll {
+    from{
+        height: 0;
+    }
+    to{
+        height: 100%;
+    }
+    
+}

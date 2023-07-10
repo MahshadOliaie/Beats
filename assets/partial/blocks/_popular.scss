@@ -1,0 +1,105 @@
+.popular {
+    background-color: $popular-bg-color;
+    color: $popular-color;
+    height: $popular-height;
+    overflow-x: scroll;
+
+
+
+    &__heading {
+        height: $popular-heading-height;
+        padding-top: $popular-heading-padding-top;
+        width: $popular-heading-width;
+        margin: $popular-heading-margin;
+
+        @media screen and (min-width:768px) {
+            width: $popular-heading-width;
+            margin: $popular-heading-margin;
+        }
+    }
+
+
+
+
+    &__seemore {
+        font-size: 14px;
+        transition: 200ms;
+        @include dFlex();
+
+        &:hover {
+            color: rgb(175, 86, 86);
+            transition: 200ms;
+        }
+    }
+
+
+
+
+
+    &__cards {
+        @include dFlex();
+        height: $popular-cards-height;
+        overflow-x: scroll;
+        padding: $popular-cards-padding;
+
+        @media screen and (min-width:768px) {
+            overflow-x: scroll;
+            padding: $popular-cards-padding-desktop;
+        }
+
+
+
+        &__card {
+            background: linear-gradient($card-bg-gradiant);
+            color: $card-color;
+            border-radius: $card-border-radius;
+            @include dFlex(column, space-between, center);
+            transition: $card-transition;
+            width: $popular-card-width;
+            height: $popular-card-height;
+            margin: $popular-card-margin;
+
+            @media screen and (min-width:768px) {
+                height: $popular-card-height;
+                margin: $popular-card-margin-desktop;
+            }
+
+
+
+            &:hover {
+                transform: scale(1.03);
+                transition: $card-transition;
+            }
+
+
+
+
+            &__heading {
+                text-align: center;
+                font-size: $popular-card-heading-font-size;
+
+                @media screen and (min-width:768px) {
+                    text-align: center;
+                    font-size: $popular-card-heading-font-size;
+                }
+            }
+
+
+
+
+            &__image {
+                width: $popular-card-image-width;
+
+                @media screen and (min-width:768px) {
+                    width: $popular-image-width-desktop ;
+                }
+            }
+
+
+        }
+    }
+
+
+
+
+}

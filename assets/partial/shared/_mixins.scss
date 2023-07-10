@@ -1,0 +1,24 @@
+@mixin dFlex($direction: row, $justify-content: space-between, $align-items: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+
+@mixin buttonStyle() {
+    background: linear-gradient($buds-btn-linear-gradient);
+    border-radius: $buds-btn-border-radius;
+    box-shadow: $buds-btn-shadow;
+    transition: $buds-btn-transition;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: $buds-btn-transition;
+    }
+}
+
+
+@mixin textShadow($rem, $color){
+    text-shadow: 1px 1px $rem $color;
+}

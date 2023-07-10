@@ -1,0 +1,188 @@
+  
+// header
+$header-bg-color:#545454;
+$header-color:white;
+$header-padding: .5% 5%;
+$header-logo-width:40%;
+$header-left-width:100px;
+
+// header in mobile
+$header-right-width-mobile:50px;
+
+// header in desktop
+$header-right-width-desktop:230px;
+$header-navigation-width-desktop:190px;
+
+
+//---------------------------------------------------------------------------------------------------------------------------------
+
+
+// motto section
+$motto-section-bg-color:#B9BCC0;
+$motto-text-font-weight:900;
+$motto-text-bg-gradient:20deg,black 5%, #8e8b8b;
+
+// mobile
+$motto-section-height-mobile:60vh;
+$motto-font-size-mobile:3rem;
+$motto-margin-top-mobile:50%;
+$motto-margin-left-mobile:-30%;
+$motto-image-width-mobile:45%;
+
+//desktop
+$motto-section-height-desktop:100vh;
+$motto-font-size-desktop:8rem;
+$motto-margin-top-desktop:25%;
+$motto-margin-left-desktop:-20%;
+$motto-image-width-desktop:25%;
+
+
+
+
+//-------------------------------------------------------------------------------------------------------------------------------
+
+
+//buds+ section
+$buds-bg-color-gradient: #2D2D2D;
+$buds-right-image-width:40%;
+$buds-right-image-margin-right:5%;
+$buds-redbox-bg-color: rgb(197, 25, 25, 50%);
+$buds-redbox-width:70%;
+
+$buds-btn-linear-gradient:20deg, #892F35, #BD6169;
+$buds-btn-border-radius:50px;
+$buds-btn-shadow:.5px .5px 1rem rgba(0, 0, 0, 0.44);
+$buds-btn-transition:300ms;
+$buds-btn-bottom:10%;
+
+
+
+//mobile max-width:768px
+$buds-height-mobile:65vh;
+$buds-left-image-width-mobile:40%;
+$buds-redbox-height-mobile:10vh;
+$buds-redbox-top-mobile:57%;
+$buds-text-top-mobile:50%;
+$buds-text-left-mobile:48%;
+$buds-title-font-size-mobile:2.5rem;
+$buds-btn-padding-mobile:6px 25px;
+$buds-btn-right-mobile:8%;
+$buds-btn-fontsize-mobile:16px;
+
+//mobile max-width:470px
+$buds-height-mobile-1:55vh;
+$buds-left-image-width-mobile-1:48%;
+$buds-redbox-height-mobile-1:8vh;
+$buds-redbox-top-mobile-1:57%;
+$buds-text-top-mobile-1:54%;
+$buds-text-left-mobile-1:50%;
+$buds-title-font-size-mobile-1:1.8rem;
+$buds-btn-padding-mobile-1:5px 20px;
+$buds-btn-right-mobile-1:10%;
+
+
+//desktop
+$buds-height-desktop:105vh;
+$buds-left-image-width-desktop:30%;
+$buds-redbox-height-dektop:18vh;
+$buds-redbox-top-desktop:60%;
+$buds-text-top-desktop:45%;
+$buds-text-left-desktop:37%;
+$buds-title-font-size-desktop:6rem;
+$buds-btn-padding-desktop:15px 50px;
+$buds-btn-fontsize-desktop:25px;
+$buds-btn-right-desktop:10%;
+
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
+//popular
+$popular-bg-color:#2D2D2D;
+$popular-color:#B6B8BD;
+$popular-height:100vh;
+$card-bg-gradiant:#B6B8BD 40%, rgb(182,184,189,44%);
+$card-transition:300ms;
+$card-color:black;
+$card-border-radius:50px;
+
+
+//mobile
+$popular-heading-width:85px;
+$popular-heading-height:18vh;
+$popular-heading-padding-top:40px;
+$popular-heading-margin:0 auto;
+$popular-cards-padding:0 5%;
+$popular-cards-height:80vh;
+$popular-card-width:90%;
+$popular-card-height:70vh;
+$popular-card-margin:0 5%;
+$popular-card-heading-font-size:30px;
+$popular-card-image-width:300px;
+
+//desktop
+$popular-cards-padding-desktop: 0 2%;
+$popular-card-margin-desktop:0 2%;
+$popular-image-width-desktop:450px;
+
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
+// register section
+$register-bg-color:rgba(70, 70, 70, 0.94);
+$register-color:white;
+$register-image-width:55%;
+$register-btn-color:black;
+$register-btn-bottom:15%;
+$register-btn-right: 12%;
+
+//tablet and mobile
+$register-height-tablet:66vh;
+$register-height-mobile:50vh;
+$register-heading-left-mt: 48%;
+$register-heading-padding-right-mt: 20px;
+$register-heading-top-tablet:20%;
+$register-heading-font-size-tablet:2.5rem;
+$register-heading-top-mobile:14%;
+$register-heading-font-size-mobile:1.5rem;
+$register-btn-padding-mt:12px 22px;
+$register-btn-margin-right-mt:5%;
+$register-btn-font-size-tablet: 16px;
+$register-btn-font-size-mobile: 10px;
+
+//desktop
+$register-height-desktop:100vh;
+$register-heading-font-size-tablet:2.5rem;
+$register-heading-font-size-desktop:4.5rem;
+$register-btn-padding-desktop:15px 25px;
+$register-btn-font-size-desktop: 20px;
+$register-heading-font-size-922:4rem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------------------------------------------------------------------------------------------
+// product page
+// -------------------------------------------------------------------------------------------------------------
+
+
+// category
+$category-bg-color:rgb(107, 107, 107);
+$category-color:white;
+$category-earbuds-headphone-width:10%;
+$category-earbuds-headphone-font-size:14px;
+$category-earbuds-headphone-font-weight:300;
+$category-earbuds-headphone-padding: 8px 50px;
+$category-earbuds-headphone-margin: 0 25px;
+$category-earbuds-headphone-opacity: .7;
+$category-title-margin:0;

@@ -1,0 +1,118 @@
+
+.products {
+    border-bottom: 1px solid;
+}
+
+.header {
+    background-color: $header-bg-color;
+    @include dFlex();
+    position: sticky;
+    top: 0;
+    z-index: 1000000;
+    color: $header-color;
+    padding: $header-padding;
+
+
+    &__right {
+        @include dFlex();
+        width: $header-right-width-mobile;
+
+        @media screen and (min-width:768px){
+            width: $header-right-width-desktop;
+        }
+
+        &__bar{
+            cursor: pointer;
+
+            @media screen and (min-width:768px){
+                display: none;
+            }
+        }
+
+        &__navigation {
+            display: none;
+
+            @media screen and (min-width:768px){
+                @include dFlex();
+                width: $header-navigation-width-desktop;
+
+                .header__right__navigation a {
+                    transition: 500ms;
+
+                    &:hover {
+                        border-bottom: 1px solid;
+                        padding-bottom: 3px;
+                        transition: 500ms;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    &__left {
+        width: $header-left-width;
+
+        &__logo {
+            width: $header-logo-width;
+        }
+    }
+
+}
+
+.menu {
+    background-color: $header-bg-color;
+    @include dFlex(column, space-evenly, center);
+    color: $header-color;
+    height: 100vh;
+    position: fixed;
+    z-index: 2000000;
+    width: 100%;
+    display: none;
+
+    &__media i {
+        font-size: 2rem;
+        padding: 10px;
+        margin: 20px;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    &__item {
+
+            display: block;
+            width: 70%;
+            text-align: center;
+            position: relative;
+
+
+        &::after{
+            content: "";
+            display: none;
+            position: absolute;
+            left: 50%;
+            height: .5px;
+            background: white;
+            margin-top: 10px;
+            animation: linewidth 500ms forwards;
+        }
+
+    
+        &:hover::after{
+            display: block;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@keyframes linewidth {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}

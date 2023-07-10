@@ -1,0 +1,513 @@
+.title {
+    width: 80%;
+    padding-left: 5%;
+
+    &__heading {
+        align-self: flex-start;
+        font-size: 39px;
+        margin: 0;
+        margin-top: 10%;
+    }
+
+    &__paragraph {
+        margin: 0;
+    }
+}
+
+.gallery {
+    @include dFlex(column);
+
+
+    &__images {
+        @include dFlex();
+        overflow: scroll;
+
+        &__image {
+            width: 100%;
+        }
+
+    }
+
+    &__color {
+        @include dFlex(row, center, center);
+
+        &__choose {
+            border-radius: 50%;
+            border: none;
+
+            &:hover{
+                border: 2px solid rgb(226, 226, 226);
+                outline: 1px solid black;
+            }
+
+        }
+
+
+    }
+
+    &__add {
+        @include dFlex(row, center, center);
+
+
+        &__btn {
+            background-color: black;
+            color: white;
+            transition: 200ms;
+
+            &:hover{
+                background-color: rgb(185, 66, 66);
+                color: black;
+                transition: 200ms;
+            }
+        
+    
+        }
+    }
+}
+
+
+
+#blackbtn {
+    background: linear-gradient(-45deg, black 50%, rgb(160, 0, 0) 50%);
+}
+
+#goldbtn {
+    background: linear-gradient(-45deg, rgb(225, 219, 140) 50%, rgb(255, 255, 255) 50%);
+}
+
+#whitebtn {
+    background: linear-gradient(-45deg, rgb(255, 255, 255) 50%, rgb(160, 0, 0) 50%);
+}
+
+#redbtn {
+    background: rgb(231, 28, 28);
+}
+
+#blacksolobtn,
+#budsblackbtn,
+#fitproblackbtn,
+#flexblackbtn {
+    background: rgb(0, 0, 0);
+}
+
+#pinkbtn {
+    background: linear-gradient(-45deg, rgb(199 149 146) 50%, rgb(255, 255, 255) 50%);
+
+}
+
+#bluebtn {
+    background: rgb(23, 25, 133);
+}
+
+#purplebtn {
+    background: linear-gradient(-45deg, rgb(129 103 169) 50%, rgb(255, 255, 255) 50%);
+
+}
+
+#ivorybtn {
+    background: rgb(223 210 202);
+}
+
+#clearbtn {
+    background: rgb(181 183 197);
+}
+
+#fitprowhitebtn,
+#flexwhitebtn {
+    background: white;
+}
+
+#fitprograybtn {
+    background: rgb(109 110 111);
+}
+
+#fitpropinkbtn {
+    background: rgb(230 154 143);
+}
+
+#fitpropurplebtn {
+    background: rgb(228 204 238);
+}
+
+#flexyellowbtn{
+    background: rgb(242 251 151);
+}
+#flexbluebtn{
+    background:rgb(173 221 242);
+}
+
+.details {
+
+    padding: 50px;
+
+    &__card {
+        line-height: 2;
+
+        &__title {
+            line-height: 1;
+
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 100%;
+                height: .5px;
+                background-color: black;
+            }
+        }
+
+    }
+
+}
+
+
+.slider {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.studioSlider {
+    background-image: url(../images/studio/studio3-pdp-p03.jpg.large.2x.jpg);
+    animation: studioSlider 13s infinite ease-in-out;
+}
+
+.soloSlider {
+    background-image: url(../images/solo/Screenshot.jpeg);
+    animation: soloSlider 13s infinite ease-in-out;
+}
+
+.studiobudsSlider {
+    background-image: url(../images/studiobuds/hero-studiobudsplus.jpg.large.2x.jpg);
+    animation: studiobudsSlider 19s infinite ease-in-out;
+}
+
+.fitproSlider {
+    background-image: url(../images/fitpro/fitpro-tips-tricks-videothumbnail-black-ios.jpg.large.2x.jpg);
+    animation: fitproSlider 19s infinite ease-in-out;
+}
+
+
+.insidebox {
+    background: linear-gradient(transparent, gray);
+    line-height: 2;
+
+    & ul {
+        margin-bottom: 0;
+        padding-bottom: 50px;
+    }
+}
+
+
+
+
+
+
+// mobile-----------------------------------------------------------------------------------------------------------------
+
+@media screen and (max-width:768px) {
+    .title {
+        margin-bottom: 10%;
+
+
+        &__paragraph {
+            font-size: 14px;
+        }
+    }
+
+    .gallery {
+        width: 100%;
+
+
+
+        &__color {
+
+            &__choose {
+                margin: 20px 5px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: none;
+
+            }
+        }
+
+
+        &__add {
+            margin: 20px 0;
+
+            &__price {
+                font-weight: 700;
+                margin-right: 20px;
+            }
+
+            &__btn {
+                padding: 10px 25px;
+                border-radius: 30px;
+            }
+        }
+    }
+
+    .details {
+
+        &__card {
+            margin: 50px 0;
+        }
+    }
+
+
+
+    .slider {
+        height: 40vh;
+
+    }
+
+
+    .insidebox {
+        padding: 50px;
+
+        &__image {
+            width: 90%;
+        }
+
+        &__title {
+            font-weight: 300;
+            font-size: 25px;
+        }
+
+        & ul {
+            font-size: 14px;
+            margin-bottom: 0;
+            padding-bottom: 50px;
+        }
+    }
+
+
+
+    #fleximgone{
+        width: 100%;
+    }
+    #fleximgtwo{
+        width: 60%;
+        margin: 50px;
+        margin-left: 40%;
+        margin-bottom: 0;
+    }
+}
+
+
+
+//desktop----------------------------------------------------------------------------------------------
+
+@media screen and (min-width:768px) {
+
+    .desktop {
+        @include dFlex(row-reverse, space-evenly, center);
+        padding: 5%;
+        height: 85vh;
+    }
+
+
+    .title {
+        align-self: flex-start;
+        margin-top: 5%;
+        position: relative;
+    }
+
+    .gallery {
+        width: 65%;
+        overflow: visible;
+
+        &__color {
+            &__choose {
+                margin: 0 5px;
+                width: 40px;
+                height: 40px;
+
+            }
+        }
+
+
+        &__add {
+            @include dFlex(column, center, center);
+            position: absolute;
+            top: 50vh;
+            right: 25vw;
+
+            &__price {
+                font-weight: 700;
+            }
+
+            &__btn {
+                padding: 20px 40px;
+                border-radius: 40px;
+                width: 11.14rem;
+            }
+        }
+    }
+
+
+    .details {
+        @include dFlex(row, space-evenly, flex-start);
+        flex-wrap: wrap;
+
+        &__card {
+            margin: 5% 0;
+            width: 35%;
+
+        }
+    }
+
+
+    .slider {
+        height: 80vh;
+
+    }
+
+
+    .insidebox {
+        padding: 50px;
+
+        &__image {
+            width: 50%;
+        }
+
+        & ul {
+            padding-right: 10%;
+        }
+
+        &__title {
+            font-weight: 300;
+            margin-left: 10%;
+            font-size: 35px;
+        }
+
+    }
+
+    .imgText {
+        @include dFlex(row, center, center);
+    }
+
+
+   .fleximg{
+    @include dFlex(row , space-evenly, flex-start);
+   }
+   #fleximgone{
+    width: 50%;
+   }
+   #fleximgtwo{
+    width: 40%;
+    padding-top: 10%;
+   }
+
+}
+
+
+// ----------------------------------------------------------------------------------------------------------------------------------------
+
+@media (min-width:768px) and (max-width:1000px) {
+
+    .desktop {
+        height: 70vh;
+    }
+    .title{
+
+        &__heading{
+            margin-top: 25%;
+        }
+       }
+
+
+}
+
+
+// animations----------------------------------------------------------------------------------------------------------
+
+@keyframes soloSlider {
+    25% {
+        background-image: url(../images/solo/solo3-wireless-thumb.jpg.large.2x.jpg);
+    }
+
+    50% {
+        background-image: url(../images/solo/solo3-pdp-p06.jpg.medium.2x.jpg);
+    }
+
+    75% {
+        background-image: url(../images/solo/solo3-pdp-p05.jpg.large.2x.jpg);
+    }
+
+    100% {
+
+        background-image: url(../images/solo/Screenshot.jpeg);
+    }
+
+}
+
+@keyframes studioSlider {
+    25% {
+        background-image: url(../images/studio/studio3-pdp-p07.png.large.2x.png);
+    }
+
+    50% {
+        background-image: url(../images/studio/studio3-pdp-p04.jpg.medium.2x.jpg);
+    }
+
+    75% {
+        background-image: url(../images/studio/studio3-pdp-p06.jpg.medium.2x.jpg);
+    }
+
+    100% {
+        background-image: url(../images/studio/studio3-pdp-p03.jpg.large.2x.jpg);
+    }
+}
+
+@keyframes studiobudsSlider {
+    17% {
+        background-image: url(../images/studiobuds/Screenshotbuds.jpeg);
+    }
+
+    33% {
+        background-image: url(../images/studiobuds/studiobuds-pdp-apple-music.jpg.medium.2x.jpg);
+    }
+
+    50% {
+        background-image: url(../images/studiobuds/studiobudsplus-pdp-p01.jpg.large.2x.jpg);
+    }
+
+    68% {
+        background-image: url(../images/studiobuds/studiobudsplus-pdp-p10.jpg.large.2x.jpg);
+    }
+
+    85% {
+        background-image: url(../images/studiobuds/studiobudsplus-pdp-p06.jpg.large.2x.jpg);
+    }
+
+    100% {
+        background-image: url(../images/studiobuds/hero-studiobudsplus.jpg.large.2x.jpg);
+    }
+}
+
+@keyframes fitproSlider {
+    17% {
+        background-image: url(../images/fitpro/fitpro-pdp-p08.jpg.large.2x.jpg);
+    }
+
+    33% {
+        background-image: url(../images/fitpro/fitpro-pdp-apple-music.jpg.medium.2x.jpg);
+    }
+
+    50% {
+        background-image: url(../images/fitpro/fitpro-pdp-p12.jpg.medium.2x.jpg);
+    }
+
+    68% {
+        background-image: url(../images/fitpro/fitpro-pdp-p09.jpg.large.2x.jpg);
+    }
+
+    85% {
+        background-image: url(../images/fitpro/fitpro-pdp-p10.jpg.large.2x.jpg);
+    }
+
+    100% {
+        background-image: url(../images/fitpro/fitpro-tips-tricks-videothumbnail-black-ios.jpg.large.2x.jpg);
+    }
+}

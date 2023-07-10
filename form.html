@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn/SignUp</title>
+    <link rel="stylesheet" href="./assets/css/Form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body class="container">
+
+    <section class="signin">
+        <form class="form">
+            <input type="text" class="username" name="usernameIN" placeholder="USERNAME" required>
+            <input type="password" class="password" name="passwordIN" placeholder="PASSWORD" required>
+
+            <span class="check">
+                <span class="customize">
+                    <input type="checkbox" name="keep" class="checkbox" value="keepingSignin" required>
+                </span>
+                <label for="keep">KEEP ME SIGN IN</label>
+
+            </span>
+
+            <input type="submit" value="SIGN IN">
+
+            <p id="goSignUp">didn't have an account?</p>
+
+        </form>
+    </section>
+
+
+
+
+
+
+    <section class="signup show">
+        <form class="form">
+            <input type="email" class="email" name="email" placeholder="EMAIL" required autofocus>
+            <input type="text" class="username" name="usernameUP" placeholder="USERNAME" required>
+            <input type="password" class="password" name="passwordUP" placeholder="PASSWORD" required>
+            <input type="password" class="password" name="passwordUP" placeholder="CONFIRM PASSWORD" required>
+
+            <span class="check">
+                <span class="customize">
+                    <input type="checkbox" name="keep" class="checkbox" value="keepingSignin" required>
+                    <!-- <i class="fa fa-check checkicon"></i> -->
+                </span>
+
+                <label for="agree">I AGREE WITH TERM & CONDITIONS</label>
+
+            </span>
+
+            <input type="submit" value="SIGN UP">
+
+            <p id="goSignIn">already have an account?</p>
+
+        </form>
+    </section>
+
+
+
+
+    <script>
+        let goSignIn = document.querySelector("#goSignIn");
+        let goSignUp = document.querySelector("#goSignUp");
+
+        let signIn = document.querySelector(".signin");
+        let signUp = document.querySelector(".signup")
+
+        function hideOthers() {
+            signIn.classList.remove("show");
+            signUp.classList.remove("show");
+        }
+
+        goSignIn.onclick = showSignIn;
+        function showSignIn() {
+            hideOthers();
+            signIn.classList.add("show");
+        }
+
+        goSignUp.onclick = showSignUp;
+        function showSignUp() {
+            hideOthers();
+            signUp.classList.add("show");
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

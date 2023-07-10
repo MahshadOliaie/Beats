@@ -1,0 +1,19 @@
+
+
+//  shared
+ @import './shared/variables';
+ @import './shared/mixins';
+ @import './shared/layout';
+
+
+// blocks
+@import './blocks/header';
+@import './blocks/motto';
+@import './blocks/buds+';
+@import './blocks/popular';
+@import './blocks/register';
+@import './blocks/footer';
+@import './blocks/category';
+@import './blocks/earbuds';
+@import './blocks/headphone';
+@import './blocks/shop';
