@@ -7,13 +7,13 @@
 
 
 // blocks
-@import './blocks/header';
-@import './blocks/motto';
-@import './blocks/buds+';
-@import './blocks/popular';
-@import './blocks/register';
-@import './blocks/footer';
-@import './blocks/category';
-@import './blocks/earbuds';
-@import './blocks/headphone';
-@import './blocks/shop';
+@import './blocks/common/header';
+@import './blocks/homePage/motto';
+@import './blocks/homePage/buds+';
+@import './blocks/homePage/popular';
+@import './blocks/homePage/register';
+@import './blocks/common/footer';
+@import './blocks/productsPage/category';
+@import './blocks/productsPage/earbuds';
+@import './blocks/productsPage/headphone';
+@import './blocks/shopingPages/shop';
