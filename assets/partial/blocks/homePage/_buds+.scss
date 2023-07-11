@@ -3,14 +3,11 @@
     background: linear-gradient($motto-section-bg-color, $buds-bg-color-gradient);
     @include dFlex(column, center);
     position: relative;
-    height: $buds-height-mobile;
+    height: 500px;
 
-    @media screen and (max-width:470px) {
-        height: $buds-height-mobile-1;
-    }
 
     @media screen and (min-width:768px){
-        height: $buds-height-desktop;
+        height: 1000px;
     }
 
 
@@ -27,14 +24,14 @@
 
     &__leftimage {
         filter: saturate(0);
-        width: $buds-left-image-width-mobile;
+        width: 40%;
 
         @media screen and (max-width:470px) {
-            width: $buds-left-image-width-mobile-1;
+            width: 48%;
         }
 
         @media screen and (min-width:768px){
-            width: $buds-left-image-width-desktop;
+            width: 30%;
         }
     }
 
@@ -43,8 +40,8 @@
 
 
     &__rightimage {
-        width: $buds-right-image-width;
-        margin-right: $buds-right-image-margin-right;
+        width: 40%;
+        margin-right: 5%;
         transform: rotate(10deg);
         justify-self: flex-start;
 
@@ -54,43 +51,21 @@
 
 
 
-    &__redbox {
-        background-color: $buds-redbox-bg-color;
-        position: absolute;
-        width: $buds-redbox-width;
-        left: 0;
-        height: $buds-redbox-height-mobile;
-        top: $buds-redbox-top-mobile;
-
-        @media screen and (max-width:470px) {
-            height: $buds-redbox-height-mobile-1;
-        }
-
-        @media screen and (min-width:768px){
-            height: $buds-redbox-height-dektop;
-            top: $buds-redbox-top-desktop;
-        }
-
-
-    }
-
-
-
 
 
     &__text {
         position: absolute;
-        top: $buds-text-top-mobile;
-        left: $buds-text-left-mobile;
+        top: 50%;
+        left: 48%;
 
         @media screen and (max-width:470px) {
-            top: $buds-text-top-mobile-1;
-            left: $buds-text-left-mobile-1;
+            top: 54%;
+            left: 50%;
         }
 
         @media screen and (min-width:768px){
-            top: $buds-text-top-desktop;
-            left: $buds-text-left-desktop;
+            top: 45%;
+            left: 37%;
 
         }
 
@@ -104,14 +79,14 @@
             -webkit-text-fill-color: transparent;
             font-weight: 900;
             margin-bottom: 0;
-            font-size: $buds-title-font-size-mobile;
+            font-size: 2.5rem;
 
             @media screen and (max-width:470px) {
-                font-size: $buds-title-font-size-mobile-1;
+                font-size: 1.8rem;
             }
 
             @media screen and (min-width:768px){
-                font-size: $buds-title-font-size-desktop;
+                font-size: 6rem;
             }
 
         }
@@ -125,20 +100,20 @@
     &__btn {
         position: absolute;
         @include buttonStyle();
-        bottom: $buds-btn-bottom;
-        padding: $buds-btn-padding-mobile;
-        right: $buds-btn-right-mobile;
-        font-size: $buds-btn-fontsize-mobile;
+        bottom: 10%;
+        padding: 6px 25px;
+        right: 8%;
+        font-size: 16px;
 
         @media screen and (max-width:470px) {
-            padding: $buds-btn-padding-mobile-1;
-            right: $buds-btn-right-mobile-1;
+            padding: 5px 20px;
+            right: 10%;
         }
 
         @media screen and (min-width:768px){
-            padding: $buds-btn-padding-desktop;
-            font-size: $buds-btn-fontsize-desktop;
-            right: $buds-btn-right-desktop;
+            padding: 15px 50px;
+            font-size: 25px;
+            right: 10%;
 
         }
 
