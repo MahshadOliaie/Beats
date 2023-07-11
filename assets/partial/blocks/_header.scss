@@ -10,15 +10,15 @@
     top: 0;
     z-index: 1000000;
     color: $header-color;
-    padding: $header-padding;
+    padding: .5% 5%;
 
 
     &__right {
         @include dFlex();
-        width: $header-right-width-mobile;
+        width: 50px;
 
         @media screen and (min-width:768px){
-            width: $header-right-width-desktop;
+            width: 230px;
         }
 
         &__bar{
@@ -34,7 +34,7 @@
 
             @media screen and (min-width:768px){
                 @include dFlex();
-                width: $header-navigation-width-desktop;
+                width: 190px;
 
                 .header__right__navigation a {
                     transition: 500ms;
@@ -52,10 +52,10 @@
     }
 
     &__left {
-        width: $header-left-width;
+        width: 100px;
 
         &__logo {
-            width: $header-logo-width;
+            width: 40%;
         }
     }
 
@@ -107,6 +107,9 @@
         }
     }
 }
+
+
+// keyframes----------------------------------------------------------------------------------
 
 @keyframes linewidth {
     from{

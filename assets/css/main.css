@@ -199,7 +199,7 @@ a {
           align-items: center;
   background-color: #B9BCC0;
   position: relative;
-  height: 60vh;
+  height: 500px;
 }
 @media screen and (min-width: 768px) {
   .motto {

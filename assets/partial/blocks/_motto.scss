@@ -3,7 +3,7 @@
     @include dFlex(column, flex-start, center);
     background-color: $motto-section-bg-color;
     position: relative;
-    height: $motto-section-height-mobile;
+    height: 500px;
 
     @media screen and (min-width:768px){
         height: $motto-section-height-desktop;
