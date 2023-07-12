@@ -2,14 +2,14 @@
     background: linear-gradient($popular-bg-color 50%, $register-bg-color);
     color: $register-color;
     @include dFlex(row, center, center);
-    height: $register-height-mobile;
+    height:50vh;
 
     @media screen and (max-width:850px) {
-        height: $register-height-tablet;
+        height:66vh;
     }
 
     @media screen and (min-width:850px){
-        height: $register-height-desktop;
+        height: 100vh;
     }
 
     &__register {
@@ -17,7 +17,7 @@
 
 
         &__image {
-            width: $register-image-width;
+            width: 55%;
             position: relative;
             z-index: 1;
         }
@@ -28,17 +28,17 @@
             position: absolute;
             bottom: $register-btn-bottom;
             right: $register-btn-right;
-            font-size: $register-btn-font-size-mobile;
-            padding: $register-btn-padding-mt;
+            font-size: 10px;
+            padding: 12px 22px;
 
             @media (min-width:580px) and (max-width:850px) {
-                margin-right: $register-btn-margin-right-mt;
-                font-size: $register-btn-font-size-tablet;
+                margin-right: 5%;
+                font-size: 16px;
             }
 
             @media screen and (min-width:850px){
-                padding: $register-btn-padding-desktop;
-                font-size: $register-btn-font-size-desktop;
+                padding: 15px 25px;
+                font-size: 20px;
             }
 
 
@@ -47,23 +47,22 @@
 
         &__heading {
             position: absolute;
-            top: $register-heading-top-mobile;
-            font-size: $register-heading-font-size-mobile;
-            left: $register-heading-left-mt;
-            padding-right: $register-heading-padding-right-mt;
+            top: 14%;
+            font-size: 1.5rem;
+            left: 48%;
+            padding-right: 20px;
 
             @media (min-width:580px) and (max-width:850px) {
-                top: $register-heading-top-tablet;
-                font-size: $register-heading-font-size-tablet;
+                top: 20%;
+                font-size: 2.5rem;
             }
 
             @media screen and (min-width:850px){
-                top: $register-heading-top-tablet;
-                font-size: $register-heading-font-size-desktop;
+                font-size: 4.5rem;
             }
 
             @media (min-width:850px) and (max-width:922px) {
-                font-size: $register-heading-font-size-922;
+                font-size: 4rem;
             }
         }
 
