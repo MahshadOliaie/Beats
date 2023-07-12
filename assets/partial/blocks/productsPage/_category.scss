@@ -8,20 +8,20 @@
     &__earbuds,
     &__headphone {
         @include dFlex(column, space-between, center);
-        width: $category-earbuds-headphone-width;
+        width: 10%;
         text-align: center;
-        font-size: $category-earbuds-headphone-font-size;
-        font-weight: $category-earbuds-headphone-font-weight;
-        padding: $category-earbuds-headphone-padding;
-        margin: $category-earbuds-headphone-margin;
-        opacity: $category-earbuds-headphone-opacity;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 8px 50px;
+        margin: 0 25px;
+        opacity: .7;
 
         &:hover{
             border-bottom: .5px solid;
         }
 
         &__title{
-            margin: $category-title-margin;
+            margin: 0;
         }
         
     }
