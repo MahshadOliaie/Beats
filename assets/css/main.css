@@ -396,20 +396,19 @@ a {
 .popular {
   background-color: #2D2D2D;
   color: #B6B8BD;
-  height: 100vh;
+  height: 840px;
   overflow-x: scroll;
 }
+@media screen and (min-width: 768px) {
+  .popular {
+    height: 100vh;
+  }
+}
 .popular__heading {
-  height: 18vh;
+  height: 80px;
   padding-top: 40px;
   width: 85px;
   margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  .popular__heading {
-    width: 85px;
-    margin: 0 auto;
-  }
 }
 .popular__seemore {
   font-size: 14px;
@@ -448,13 +447,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80vh;
+  height: 700px;
   overflow-x: scroll;
   padding: 0 5%;
 }
 @media screen and (min-width: 768px) {
   .popular__cards {
     overflow-x: scroll;
+    height: 90%;
     padding: 0 2%;
   }
 }
@@ -479,12 +479,12 @@ a {
   -webkit-transition: 300ms;
   transition: 300ms;
   width: 90%;
-  height: 70vh;
+  height: 500px;
   margin: 0 5%;
 }
 @media screen and (min-width: 768px) {
   .popular__cards__card {
-    height: 70vh;
+    height: 80%;
     margin: 0 2%;
   }
 }
@@ -501,7 +501,6 @@ a {
 @media screen and (min-width: 768px) {
   .popular__cards__card__heading {
     text-align: center;
-    font-size: 30px;
   }
 }
 .popular__cards__card__image {

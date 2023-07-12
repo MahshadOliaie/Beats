@@ -1,21 +1,21 @@
 .popular {
     background-color: $popular-bg-color;
     color: $popular-color;
-    height: $popular-height;
+    height: 840px;
     overflow-x: scroll;
+
+    @media screen and (min-width:768px) {
+        height: 100vh;
+    }
 
 
 
     &__heading {
-        height: $popular-heading-height;
-        padding-top: $popular-heading-padding-top;
-        width: $popular-heading-width;
-        margin: $popular-heading-margin;
+        height: 80px;
+        padding-top: 40px;
+        width: 85px;
+        margin: 0 auto;
 
-        @media screen and (min-width:768px) {
-            width: $popular-heading-width;
-            margin: $popular-heading-margin;
-        }
     }
 
 
@@ -38,12 +38,13 @@
 
     &__cards {
         @include dFlex();
-        height: $popular-cards-height;
+        height: 700px;
         overflow-x: scroll;
-        padding: $popular-cards-padding;
+        padding: 0 5%;
 
         @media screen and (min-width:768px) {
             overflow-x: scroll;
+            height: 90%;
             padding: $popular-cards-padding-desktop;
         }
 
@@ -55,13 +56,13 @@
             border-radius: $card-border-radius;
             @include dFlex(column, space-between, center);
             transition: $card-transition;
-            width: $popular-card-width;
-            height: $popular-card-height;
-            margin: $popular-card-margin;
+            width: 90%;
+            height: 500px;
+            margin: 0 5%;
 
             @media screen and (min-width:768px) {
-                height: $popular-card-height;
-                margin: $popular-card-margin-desktop;
+                height: 80%;
+                margin: 0 2%;
             }
 
 
@@ -76,11 +77,10 @@
 
             &__heading {
                 text-align: center;
-                font-size: $popular-card-heading-font-size;
+                font-size: 30px;
 
                 @media screen and (min-width:768px) {
                     text-align: center;
-                    font-size: $popular-card-heading-font-size;
                 }
             }
 
@@ -88,10 +88,10 @@
 
 
             &__image {
-                width: $popular-card-image-width;
+                width: 300px;
 
                 @media screen and (min-width:768px) {
-                    width: $popular-image-width-desktop ;
+                    width: 450px ;
                 }
             }
 
