@@ -3,15 +3,16 @@
     @include dFlex(column, space-around, center);
     background: linear-gradient(rgb(226, 226, 226), $register-bg-color );
     margin-top: 100px;
-    height: 80vh;
+    height: 650px;
 
     @media screen and (min-width:700px) {
-        height: 90vh;
+        height: 750px;
     }
 
     &__title {
         font-size: 25px;
-        margin-bottom: 0;
+        margin: 0;
+        padding-top: 40px;
         border-bottom: .1px solid rgba(0, 0, 0, 0.461);
     }
 
@@ -70,19 +71,19 @@
 
     &__models {
         @include dFlex(row, center, center);
-        height: 10vh;
+        height: 80px;
         border-top: .1px solid rgba(0, 0, 0, 0.461);
         padding-top: 15px;
 
         @media screen and (min-width:700px) {
-            height: 16vh;
+            height: 120px;
         }
 
         &__item {
             margin: 0 6%;
             width: 7%;
             @include dFlex(column, center, space-between);
-            transition: 300ms;
+            transition: $item-transition;
             cursor: pointer;
 
             &__title {
@@ -97,7 +98,7 @@
 
             &:hover {
                 transform: scale(1.1);
-                transition: 300ms;
+                transition: $item-transition;
             }
 
             &__img {
