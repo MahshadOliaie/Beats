@@ -1242,6 +1242,11 @@ a {
     height: 85vh;
   }
 }
+@media (min-width: 768px) and (max-width: 1000px) {
+  .desktop {
+    height: 70vh;
+  }
+}
 
 .title {
   width: 80%;
@@ -1254,6 +1259,11 @@ a {
   font-size: 39px;
   margin: 0;
   margin-top: 10%;
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .title__heading {
+    margin-top: 25%;
+  }
 }
 .title__paragraph {
   margin: 0;
@@ -1639,14 +1649,6 @@ a {
   #fleximgtwo {
     width: 40%;
     padding-top: 10%;
-  }
-}
-@media (min-width: 768px) and (max-width: 1000px) {
-  .desktop {
-    height: 70vh;
-  }
-  .title__heading {
-    margin-top: 25%;
   }
 }
 @-webkit-keyframes soloSlider {

@@ -5,6 +5,11 @@
         height: 85vh;
     }
 
+
+    @media (min-width:768px) and (max-width:1000px){
+        height: 70vh;
+    }
+
 }
 
 
@@ -18,6 +23,11 @@
         font-size: 39px;
         margin: 0;
         margin-top: 10%;
+
+
+        @media (min-width:768px) and (max-width:1000px){
+            margin-top: 25%;
+        }
     }
 
     &__paragraph {
@@ -357,23 +367,6 @@
 }
 
 
-// ----------------------------------------------------------------------------------------------------------------------------------------
-
-@media (min-width:768px) and (max-width:1000px) {
-
-    .desktop {
-        height: 70vh;
-    }
-
-    .title {
-
-        &__heading {
-            margin-top: 25%;
-        }
-    }
-
-
-}
 
 
 // animations----------------------------------------------------------------------------------------------------------
