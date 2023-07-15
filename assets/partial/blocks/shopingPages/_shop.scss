@@ -1,6 +1,17 @@
+.desktop {
+    @media screen and (min-width:768px) {
+        @include dFlex(row-reverse, space-evenly, center);
+        padding: 5%;
+        height: 85vh;
+    }
+
+}
+
+
 .title {
     width: 80%;
     padding-left: 5%;
+    margin-bottom: 10%;
 
     &__heading {
         align-self: flex-start;
@@ -11,11 +22,25 @@
 
     &__paragraph {
         margin: 0;
+        font-size: 14px;
+    }
+
+
+    @media screen and (min-width:768px) {
+        align-self: flex-start;
+        margin-top: 5%;
+        position: relative;
     }
 }
 
 .gallery {
     @include dFlex(column);
+    width: 100%;
+
+    @media screen and (min-width:768px) {
+        width: 65%;
+        overflow: visible;
+    }
 
 
     &__images {
@@ -34,8 +59,17 @@
         &__choose {
             border-radius: 50%;
             border: none;
+            margin: 20px 5px;
+            width: 30px;
+            height: 30px;
 
-            &:hover{
+            @media screen and (min-width:768px) {
+                margin: 0 5px;
+                width: 40px;
+                height: 40px;
+            }
+
+            &:hover {
                 border: 2px solid rgb(226, 226, 226);
                 outline: 1px solid black;
             }
@@ -47,20 +81,45 @@
 
     &__add {
         @include dFlex(row, center, center);
+        margin: 20px 0;
+
+        @media screen and (min-width:768px) {
+            @include dFlex(column, center, center);
+            position: absolute;
+            top: 50vh;
+            right: 25vw;
+        }
+
+        &__price {
+            font-weight: 700;
+            margin-right: 20px;
+
+            @media screen and (min-width:768px) {
+                font-weight: 700;
+            }
+        }
 
 
         &__btn {
             background-color: black;
             color: white;
             transition: 200ms;
+            padding: 10px 25px;
+            border-radius: 30px;
 
-            &:hover{
+            @media screen and (min-width:768px) {
+                padding: 20px 40px;
+                border-radius: 40px;
+                width: 11.14rem;
+            }
+
+            &:hover {
                 background-color: rgb(185, 66, 66);
                 color: black;
                 transition: 200ms;
             }
-        
-    
+
+
         }
     }
 }
@@ -129,19 +188,31 @@
     background: rgb(228 204 238);
 }
 
-#flexyellowbtn{
+#flexyellowbtn {
     background: rgb(242 251 151);
 }
-#flexbluebtn{
-    background:rgb(173 221 242);
+
+#flexbluebtn {
+    background: rgb(173 221 242);
 }
 
 .details {
 
     padding: 50px;
 
+    @media screen and (min-width:768px) {
+        @include dFlex(row, space-evenly, flex-start);
+        flex-wrap: wrap;
+    }
+
     &__card {
         line-height: 2;
+        margin: 50px 0;
+
+        @media screen and (min-width:768px) {
+            margin: 5% 0;
+            width: 35%;
+        }
 
         &__title {
             line-height: 1;
@@ -164,6 +235,12 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    height: 40vh;
+
+    @media screen and (min-width:768px) {
+        height: 80vh;
+
+    }
 }
 
 .studioSlider {
@@ -190,10 +267,36 @@
 .insidebox {
     background: linear-gradient(transparent, gray);
     line-height: 2;
+    padding: 50px;
+
+
+    &__image {
+        width: 90%;
+
+        @media screen and (min-width:768px) {
+            width: 50%;
+        }
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 25px;
+
+        @media screen and (min-width:768px) {
+            margin-left: 10%;
+            font-size: 35px;
+        }
+    }
 
     & ul {
+        font-size: 14px;
         margin-bottom: 0;
         padding-bottom: 50px;
+
+        @media screen and (min-width:768px) {
+            padding-right: 10%;
+        }
+
     }
 }
 
@@ -205,88 +308,16 @@
 // mobile-----------------------------------------------------------------------------------------------------------------
 
 @media screen and (max-width:768px) {
-    .title {
-        margin-bottom: 10%;
-
-
-        &__paragraph {
-            font-size: 14px;
-        }
-    }
-
-    .gallery {
-        width: 100%;
 
 
 
-        &__color {
-
-            &__choose {
-                margin: 20px 5px;
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                border: none;
-
-            }
-        }
 
 
-        &__add {
-            margin: 20px 0;
-
-            &__price {
-                font-weight: 700;
-                margin-right: 20px;
-            }
-
-            &__btn {
-                padding: 10px 25px;
-                border-radius: 30px;
-            }
-        }
-    }
-
-    .details {
-
-        &__card {
-            margin: 50px 0;
-        }
-    }
-
-
-
-    .slider {
-        height: 40vh;
-
-    }
-
-
-    .insidebox {
-        padding: 50px;
-
-        &__image {
-            width: 90%;
-        }
-
-        &__title {
-            font-weight: 300;
-            font-size: 25px;
-        }
-
-        & ul {
-            font-size: 14px;
-            margin-bottom: 0;
-            padding-bottom: 50px;
-        }
-    }
-
-
-
-    #fleximgone{
+    #fleximgone {
         width: 100%;
     }
-    #fleximgtwo{
+
+    #fleximgtwo {
         width: 60%;
         margin: 50px;
         margin-left: 40%;
@@ -300,104 +331,28 @@
 
 @media screen and (min-width:768px) {
 
-    .desktop {
-        @include dFlex(row-reverse, space-evenly, center);
-        padding: 5%;
-        height: 85vh;
-    }
 
+ 
 
-    .title {
-        align-self: flex-start;
-        margin-top: 5%;
-        position: relative;
-    }
-
-    .gallery {
-        width: 65%;
-        overflow: visible;
-
-        &__color {
-            &__choose {
-                margin: 0 5px;
-                width: 40px;
-                height: 40px;
-
-            }
-        }
-
-
-        &__add {
-            @include dFlex(column, center, center);
-            position: absolute;
-            top: 50vh;
-            right: 25vw;
-
-            &__price {
-                font-weight: 700;
-            }
-
-            &__btn {
-                padding: 20px 40px;
-                border-radius: 40px;
-                width: 11.14rem;
-            }
-        }
-    }
-
-
-    .details {
-        @include dFlex(row, space-evenly, flex-start);
-        flex-wrap: wrap;
-
-        &__card {
-            margin: 5% 0;
-            width: 35%;
-
-        }
-    }
-
-
-    .slider {
-        height: 80vh;
-
-    }
-
-
-    .insidebox {
-        padding: 50px;
-
-        &__image {
-            width: 50%;
-        }
-
-        & ul {
-            padding-right: 10%;
-        }
-
-        &__title {
-            font-weight: 300;
-            margin-left: 10%;
-            font-size: 35px;
-        }
-
-    }
+     
 
     .imgText {
         @include dFlex(row, center, center);
     }
 
 
-   .fleximg{
-    @include dFlex(row , space-evenly, flex-start);
-   }
-   #fleximgone{
-    width: 50%;
-   }
-   #fleximgtwo{
-    width: 40%;
-    padding-top: 10%;
-   }
+    .fleximg {
+        @include dFlex(row, space-evenly, flex-start);
+    }
+
+    #fleximgone {
+        width: 50%;
+    }
+
+    #fleximgtwo {
+        width: 40%;
+        padding-top: 10%;
+    }
 
 }
 
@@ -409,12 +364,13 @@
     .desktop {
         height: 70vh;
     }
-    .title{
 
-        &__heading{
+    .title {
+
+        &__heading {
             margin-top: 25%;
         }
-       }
+    }
 
 
 }
