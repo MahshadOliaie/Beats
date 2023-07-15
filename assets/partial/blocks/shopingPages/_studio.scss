@@ -1,0 +1,38 @@
+
+
+.studioSlider {
+    background-image: url(../images/studio/studio3-pdp-p03.jpg.large.2x.jpg);
+    animation: studioSlider 13s infinite ease-in-out;
+}
+
+
+@keyframes studioSlider {
+    25% {
+        background-image: url(../images/studio/studio3-pdp-p07.png.large.2x.png);
+    }
+
+    50% {
+        background-image: url(../images/studio/studio3-pdp-p04.jpg.medium.2x.jpg);
+    }
+
+    75% {
+        background-image: url(../images/studio/studio3-pdp-p06.jpg.medium.2x.jpg);
+    }
+
+    100% {
+        background-image: url(../images/studio/studio3-pdp-p03.jpg.large.2x.jpg);
+    }
+}
+
+
+#blackbtn {
+    background: linear-gradient(-45deg, black 50%, rgb(160, 0, 0) 50%);
+}
+
+#goldbtn {
+    background: linear-gradient(-45deg, rgb(225, 219, 140) 50%, rgb(255, 255, 255) 50%);
+}
+
+#whitebtn {
+    background: linear-gradient(-45deg, rgb(255, 255, 255) 50%, rgb(160, 0, 0) 50%);
+}

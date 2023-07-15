@@ -1,0 +1,44 @@
+
+
+.studiobudsSlider {
+    background-image: url(../images/studiobuds/hero-studiobudsplus.jpg.large.2x.jpg);
+    animation: studiobudsSlider 19s infinite ease-in-out;
+}
+
+@keyframes studiobudsSlider {
+    17% {
+        background-image: url(../images/studiobuds/Screenshotbuds.jpeg);
+    }
+
+    33% {
+        background-image: url(../images/studiobuds/studiobuds-pdp-apple-music.jpg.medium.2x.jpg);
+    }
+
+    50% {
+        background-image: url(../images/studiobuds/studiobudsplus-pdp-p01.jpg.large.2x.jpg);
+    }
+
+    68% {
+        background-image: url(../images/studiobuds/studiobudsplus-pdp-p10.jpg.large.2x.jpg);
+    }
+
+    85% {
+        background-image: url(../images/studiobuds/studiobudsplus-pdp-p06.jpg.large.2x.jpg);
+    }
+
+    100% {
+        background-image: url(../images/studiobuds/hero-studiobudsplus.jpg.large.2x.jpg);
+    }
+}
+
+
+
+
+
+#ivorybtn {
+    background: rgb(223 210 202);
+}
+
+#clearbtn {
+    background: rgb(181 183 197);
+}

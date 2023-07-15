@@ -1,0 +1,51 @@
+
+
+.fitproSlider {
+    background-image: url(../images/fitpro/fitpro-tips-tricks-videothumbnail-black-ios.jpg.large.2x.jpg);
+    animation: fitproSlider 19s infinite ease-in-out;
+}
+
+
+@keyframes fitproSlider {
+    17% {
+        background-image: url(../images/fitpro/fitpro-pdp-p08.jpg.large.2x.jpg);
+    }
+
+    33% {
+        background-image: url(../images/fitpro/fitpro-pdp-apple-music.jpg.medium.2x.jpg);
+    }
+
+    50% {
+        background-image: url(../images/fitpro/fitpro-pdp-p12.jpg.medium.2x.jpg);
+    }
+
+    68% {
+        background-image: url(../images/fitpro/fitpro-pdp-p09.jpg.large.2x.jpg);
+    }
+
+    85% {
+        background-image: url(../images/fitpro/fitpro-pdp-p10.jpg.large.2x.jpg);
+    }
+
+    100% {
+        background-image: url(../images/fitpro/fitpro-tips-tricks-videothumbnail-black-ios.jpg.large.2x.jpg);
+    }
+}
+
+
+
+
+
+
+
+#fitprograybtn {
+    background: rgb(109 110 111);
+}
+
+#fitpropinkbtn {
+    background: rgb(230 154 143);
+}
+
+#fitpropurplebtn {
+    background: rgb(228 204 238);
+}

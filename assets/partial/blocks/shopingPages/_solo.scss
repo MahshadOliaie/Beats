@@ -1,0 +1,51 @@
+
+
+.soloSlider {
+    background-image: url(../images/solo/Screenshot.jpeg);
+    animation: soloSlider 13s infinite ease-in-out;
+}
+
+
+
+@keyframes soloSlider {
+    25% {
+        background-image: url(../images/solo/solo3-wireless-thumb.jpg.large.2x.jpg);
+    }
+
+    50% {
+        background-image: url(../images/solo/solo3-pdp-p06.jpg.medium.2x.jpg);
+    }
+
+    75% {
+        background-image: url(../images/solo/solo3-pdp-p05.jpg.large.2x.jpg);
+    }
+
+    100% {
+
+        background-image: url(../images/solo/Screenshot.jpeg);
+    }
+
+}
+
+
+
+
+
+#pinkbtn {
+    background: linear-gradient(-45deg, rgb(199 149 146) 50%, rgb(255, 255, 255) 50%);
+
+}
+
+#bluebtn {
+    background: rgb(23, 25, 133);
+}
+
+#purplebtn {
+    background: linear-gradient(-45deg, rgb(129 103 169) 50%, rgb(255, 255, 255) 50%);
+
+}
+
+
+#redbtn {
+    background: rgb(231, 28, 28);
+}

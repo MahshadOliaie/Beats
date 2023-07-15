@@ -1,0 +1,44 @@
+.fleximg {
+    @media screen and (min-width:768px) {
+        @include dFlex(row, space-evenly, flex-start);
+    }
+}
+
+
+#fleximgone {
+    width: 100%;
+
+
+    @media screen and (min-width:768px) {
+        width: 50%;
+    }
+
+}
+
+#fleximgtwo {
+    width: 60%;
+    margin: 50px;
+    margin-left: 40%;
+    margin-bottom: 0;
+
+    
+    @media screen and (min-width:768px) {
+        width: 40%;
+        padding-top: 10%;
+    }
+
+}
+
+
+
+
+
+
+
+#flexyellowbtn {
+    background: rgb(242 251 151);
+}
+
+#flexbluebtn {
+    background: rgb(173 221 242);
+}
