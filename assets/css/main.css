@@ -453,7 +453,6 @@ a {
 }
 @media screen and (min-width: 768px) {
   .popular__cards {
-    overflow-x: scroll;
     height: 90%;
     padding: 0 2%;
   }
