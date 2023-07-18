@@ -1626,9 +1626,7 @@ a {
 
 #fleximgtwo {
   width: 60%;
-  margin: 50px;
-  margin-left: 40%;
-  margin-bottom: 0;
+  margin: 50px 50px 0 40%;
 }
 @media screen and (min-width: 768px) {
   #fleximgtwo {
