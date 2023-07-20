@@ -1,4 +1,4 @@
-// for all devices---------------------------------------------------------------------------------------
+
 .earbuds {
     @include dFlex(column, space-around, center);
     background: linear-gradient($category-bg-color 1%, rgb(226, 226, 226));
