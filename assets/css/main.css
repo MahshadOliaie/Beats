@@ -77,6 +77,16 @@ a {
 .header__right__navigation {
   display: none;
 }
+.header__right__navigation a {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+.header__right__navigation a:hover {
+  border-bottom: 1px solid;
+  padding-bottom: 3px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
 @media screen and (min-width: 768px) {
   .header__right__navigation {
     display: -webkit-box;
@@ -93,16 +103,6 @@ a {
         -ms-flex-align: center;
             align-items: center;
     width: 190px;
-  }
-  .header__right__navigation .header__right__navigation a {
-    -webkit-transition: 500ms;
-    transition: 500ms;
-  }
-  .header__right__navigation .header__right__navigation a:hover {
-    border-bottom: 1px solid;
-    padding-bottom: 3px;
-    -webkit-transition: 500ms;
-    transition: 500ms;
   }
 }
 .header__left {
@@ -475,23 +475,20 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 300ms;
-  transition: 300ms;
   width: 90%;
   height: 500px;
   margin: 0 5%;
+}
+.popular__cards__card:hover {
+  background-color: rgb(95, 95, 95);
+  -webkit-box-shadow: 1px 1px 1rem black;
+          box-shadow: 1px 1px 1rem black;
 }
 @media screen and (min-width: 768px) {
   .popular__cards__card {
     height: 80%;
     margin: 0 2%;
   }
-}
-.popular__cards__card:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-  -webkit-transition: 300ms;
-  transition: 300ms;
 }
 .popular__cards__card__heading {
   text-align: center;
@@ -692,6 +689,9 @@ a {
           align-items: center;
   padding: 0;
 }
+.footer__container__links__column a:hover {
+  border-bottom: 0.5px solid black;
+}
 @media screen and (min-width: 768px) {
   .footer__container__links__column {
     display: -webkit-box;
@@ -709,9 +709,6 @@ a {
             align-items: flex-start;
     border-left: 1px solid black;
     padding-left: 10px;
-  }
-  .footer__container__links__column .footer__container__links__column a:hover {
-    border-bottom: 0.5px solid black;
   }
 }
 .footer__container__links__column:not(:last-child) {

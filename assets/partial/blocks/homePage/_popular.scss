@@ -54,21 +54,19 @@
             color: $card-color;
             border-radius: $card-border-radius;
             @include dFlex(column, space-between, center);
-            transition: $card-transition;
             width: 90%;
             height: 500px;
             margin: 0 5%;
 
-            @media screen and (min-width:768px) {
-                height: 80%;
-                margin: 0 2%;
+            &:hover {
+                background-color: rgb(95, 95, 95);
+                box-shadow: 1px 1px 1rem black;
             }
 
 
-
-            &:hover {
-                transform: scale(1.03);
-                transition: $card-transition;
+            @media screen and (min-width:768px) {
+                height: 80%;
+                margin: 0 2%;
             }
 
 

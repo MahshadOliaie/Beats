@@ -1,4 +1,4 @@
-//for all devices--------------------------------------------------------------------------------------------
+
 .footer {
     background: linear-gradient($register-bg-color, rgb(255, 255, 255));
     position: relative;
@@ -45,14 +45,16 @@
                 @include dFlex(column, space-between, center);
                 padding: 0;
 
+                & a:hover{
+                    border-bottom: .5px solid black;
+                }
+            
                 @media screen and (min-width:768px) {
                     @include dFlex(column, space-between, flex-start);
                     border-left: 1px solid black;
                     padding-left: 10px;
 
-                    .footer__container__links__column a:hover {
-                        border-bottom: .5px solid black;
-                    }
+                
                 }
 
                 &:not(:last-child) {

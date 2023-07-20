@@ -32,19 +32,19 @@
         &__navigation {
             display: none;
 
+            & a {
+                transition: 500ms;
+
+                &:hover {
+                    border-bottom: 1px solid;
+                    padding-bottom: 3px;
+                    transition: 500ms;
+                }
+            }
+
             @media screen and (min-width:768px){
                 @include dFlex();
                 width: 190px;
-
-                .header__right__navigation a {
-                    transition: 500ms;
-
-                    &:hover {
-                        border-bottom: 1px solid;
-                        padding-bottom: 3px;
-                        transition: 500ms;
-                    }
-                }
 
             }
 
