@@ -1,4 +1,5 @@
 .fleximg {
+    overflow: hidden;
     @media screen and (min-width:768px) {
         @include dFlex(row, space-evenly, flex-start);
     }

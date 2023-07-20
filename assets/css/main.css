@@ -1595,6 +1595,9 @@ a {
   background: rgb(228, 204, 238);
 }
 
+.fleximg {
+  overflow: hidden;
+}
 @media screen and (min-width: 768px) {
   .fleximg {
     display: -webkit-box;
