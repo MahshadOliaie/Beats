@@ -207,9 +207,9 @@ a {
   }
   .motto .motto__scroll {
     width: 1px;
-    height: 100px;
+    height: 80px;
     position: absolute;
-    bottom: 7%;
+    bottom: 70px;
   }
   .motto .motto__scroll__inside {
     width: 100%;
