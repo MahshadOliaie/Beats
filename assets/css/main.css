@@ -529,6 +529,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 50vh;
+  overflow: hidden;
 }
 @media screen and (max-width: 850px) {
   .registerSection {
@@ -1626,7 +1627,7 @@ a {
 
 #fleximgtwo {
   width: 60%;
-  margin: 50px 50px 0 40%;
+  margin: 50px 0 0 40%;
 }
 @media screen and (min-width: 768px) {
   #fleximgtwo {
