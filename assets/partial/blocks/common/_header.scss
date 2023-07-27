@@ -1,4 +1,3 @@
-
 .products {
     border-bottom: 1px solid;
 }
@@ -17,14 +16,14 @@
         @include dFlex();
         width: 50px;
 
-        @media screen and (min-width:768px){
+        @media screen and (min-width:768px) {
             width: 230px;
         }
 
-        &__bar{
+        &__bar {
             cursor: pointer;
 
-            @media screen and (min-width:768px){
+            @media screen and (min-width:768px) {
                 display: none;
             }
         }
@@ -42,7 +41,7 @@
                 }
             }
 
-            @media screen and (min-width:768px){
+            @media screen and (min-width:768px) {
                 @include dFlex();
                 width: 190px;
 
@@ -71,17 +70,20 @@
     width: 100%;
     display: none;
 
-    &__media svg {
-        font-size: 3rem;
-        padding: 10px;
-        margin: 10px;
+    &__media {
+        padding-bottom: 30px;
 
-        &:hover{
-            transform: scale(1.1);
+        & svg {
+            font-size: 3rem;
+            padding: 10px;
+            margin: 10px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
-    }
 
-    &__item {
+        &__item {
 
             display: block;
             width: 70%;
@@ -89,21 +91,22 @@
             position: relative;
 
 
-        &::after{
-            content: "";
-            display: none;
-            position: absolute;
-            left: 50%;
-            height: .5px;
-            background: white;
-            margin-top: 10px;
-            animation: linewidth 500ms forwards;
-        }
+            &::after {
+                content: "";
+                display: none;
+                position: absolute;
+                left: 50%;
+                height: .5px;
+                background: white;
+                margin-top: 10px;
+                animation: linewidth 500ms forwards;
+            }
 
-    
-        &:hover::after{
-            display: block;
-            transform: translateX(-50%);
+
+            &:hover::after {
+                display: block;
+                transform: translateX(-50%);
+            }
         }
     }
 }
@@ -112,10 +115,11 @@
 // keyframes----------------------------------------------------------------------------------
 
 @keyframes linewidth {
-    from{
+    from {
         width: 0;
     }
-    to{
+
+    to {
         width: 100%;
     }
 }
