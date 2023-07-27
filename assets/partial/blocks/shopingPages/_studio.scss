@@ -1,26 +1,26 @@
 
 
 .studioSlider {
-    background-image: url(../images/studio/studio3-pdp-p03.jpg.large.2x.jpg);
+    background-image: url(../images/studio/studio3-pdp-p03.jpg.large.2x.WebP);
     animation: studioSlider 13s infinite ease-in-out;
 }
 
 
 @keyframes studioSlider {
     25% {
-        background-image: url(../images/studio/studio3-pdp-p07.png.large.2x.png);
+        background-image: url(../images/studio/studio3-pdp-p07.png.large.2x.WebP);
     }
 
     50% {
-        background-image: url(../images/studio/studio3-pdp-p04.jpg.medium.2x.jpg);
+        background-image: url(../images/studio/studio3-pdp-p04.jpg.medium.2x.WebP);
     }
 
     75% {
-        background-image: url(../images/studio/studio3-pdp-p06.jpg.medium.2x.jpg);
+        background-image: url(../images/studio/studio3-pdp-p06.jpg.medium.2x.WebP);
     }
 
     100% {
-        background-image: url(../images/studio/studio3-pdp-p03.jpg.large.2x.jpg);
+        background-image: url(../images/studio/studio3-pdp-p03.jpg.large.2x.WebP);
     }
 }
 
