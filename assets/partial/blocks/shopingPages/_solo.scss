@@ -1,7 +1,7 @@
 
 
 .soloSlider {
-    background-image: url(../images/solo/Screenshot.jpeg);
+    background-image: url(../images/solo/Screenshot.WebP);
     animation: soloSlider 13s infinite ease-in-out;
 }
 
@@ -9,20 +9,20 @@
 
 @keyframes soloSlider {
     25% {
-        background-image: url(../images/solo/solo3-wireless-thumb.jpg.large.2x.jpg);
+        background-image: url(../images/solo/solo3-wireless-thumb.jpg.large.2x.WebP);
     }
 
     50% {
-        background-image: url(../images/solo/solo3-pdp-p06.jpg.medium.2x.jpg);
+        background-image: url(../images/solo/solo3-pdp-p06.jpg.medium.2x.WebP);
     }
 
     75% {
-        background-image: url(../images/solo/solo3-pdp-p05.jpg.large.2x.jpg);
+        background-image: url(../images/solo/solo3-pdp-p05.jpg.large.2x.WebP);
     }
 
     100% {
 
-        background-image: url(../images/solo/Screenshot.jpeg);
+        background-image: url(../images/solo/Screenshot.WebP);
     }
 
 }
