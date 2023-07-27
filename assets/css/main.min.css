@@ -146,13 +146,13 @@ a {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-.menu__media__item {
+.menu__item {
   display: block;
   width: 70%;
   text-align: center;
   position: relative;
 }
-.menu__media__item::after {
+.menu__item::after {
   content: "";
   display: none;
   position: absolute;
@@ -163,7 +163,7 @@ a {
   -webkit-animation: linewidth 500ms forwards;
           animation: linewidth 500ms forwards;
 }
-.menu__media__item:hover::after {
+.menu__item:hover::after {
   display: block;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
