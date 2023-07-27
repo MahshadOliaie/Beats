@@ -1510,50 +1510,50 @@ a {
 }
 
 .fitproSlider {
-  background-image: url(../images/fitpro/fitpro-tips-tricks-videothumbnail-black-ios.jpg.large.2x.jpg);
+  background-image: url(../images/fitpro/fitpro-tips-tricks-videothumbnail-black-ios.jpg.large.2x.WebP);
   -webkit-animation: fitproSlider 19s infinite ease-in-out;
           animation: fitproSlider 19s infinite ease-in-out;
 }
 
 @-webkit-keyframes fitproSlider {
   17% {
-    background-image: url(../images/fitpro/fitpro-pdp-p08.jpg.large.2x.jpg);
+    background-image: url(../images/fitpro/fitpro-pdp-p08.jpg.large.2x.WebP);
   }
   33% {
-    background-image: url(../images/fitpro/fitpro-pdp-apple-music.jpg.medium.2x.jpg);
+    background-image: url(../images/fitpro/fitpro-pdp-apple-music.jpg.medium.2x.WebP);
   }
   50% {
-    background-image: url(../images/fitpro/fitpro-pdp-p12.jpg.medium.2x.jpg);
+    background-image: url(../images/fitpro/fitpro-pdp-p12.jpg.medium.2x.WebP);
   }
   68% {
-    background-image: url(../images/fitpro/fitpro-pdp-p09.jpg.large.2x.jpg);
+    background-image: url(../images/fitpro/fitpro-pdp-p09.jpg.large.2x.WebP);
   }
   85% {
-    background-image: url(../images/fitpro/fitpro-pdp-p10.jpg.large.2x.jpg);
+    background-image: url(../images/fitpro/fitpro-pdp-p10.jpg.large.2x.WebP);
   }
   100% {
-    background-image: url(../images/fitpro/fitpro-tips-tricks-videothumbnail-black-ios.jpg.large.2x.jpg);
+    background-image: url(../images/fitpro/fitpro-tips-tricks-videothumbnail-black-ios.jpg.large.2x.WebP);
   }
 }
 
 @keyframes fitproSlider {
   17% {
-    background-image: url(../images/fitpro/fitpro-pdp-p08.jpg.large.2x.jpg);
+    background-image: url(../images/fitpro/fitpro-pdp-p08.jpg.large.2x.WebP);
   }
   33% {
-    background-image: url(../images/fitpro/fitpro-pdp-apple-music.jpg.medium.2x.jpg);
+    background-image: url(../images/fitpro/fitpro-pdp-apple-music.jpg.medium.2x.WebP);
   }
   50% {
-    background-image: url(../images/fitpro/fitpro-pdp-p12.jpg.medium.2x.jpg);
+    background-image: url(../images/fitpro/fitpro-pdp-p12.jpg.medium.2x.WebP);
   }
   68% {
-    background-image: url(../images/fitpro/fitpro-pdp-p09.jpg.large.2x.jpg);
+    background-image: url(../images/fitpro/fitpro-pdp-p09.jpg.large.2x.WebP);
   }
   85% {
-    background-image: url(../images/fitpro/fitpro-pdp-p10.jpg.large.2x.jpg);
+    background-image: url(../images/fitpro/fitpro-pdp-p10.jpg.large.2x.WebP);
   }
   100% {
-    background-image: url(../images/fitpro/fitpro-tips-tricks-videothumbnail-black-ios.jpg.large.2x.jpg);
+    background-image: url(../images/fitpro/fitpro-tips-tricks-videothumbnail-black-ios.jpg.large.2x.WebP);
   }
 }
 #fitprograybtn {
