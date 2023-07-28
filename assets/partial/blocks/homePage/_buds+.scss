@@ -15,6 +15,7 @@
 
 
     &__images {
+        width: 100%;
         @include dFlex(row, space-between, flex-start);
     }
 
@@ -33,6 +34,7 @@
         @media screen and (min-width:768px){
             width: 30%;
         }
+
     }
 
 
@@ -41,7 +43,7 @@
 
     &__rightimage {
         width: 40%;
-        margin-right: 5%;
+        margin-right: 9%;
         transform: rotate(10deg);
         justify-self: flex-start;
 

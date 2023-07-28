@@ -291,6 +291,7 @@ a {
   }
 }
 .buds__images {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,7 +323,7 @@ a {
 }
 .buds__rightimage {
   width: 40%;
-  margin-right: 5%;
+  margin-right: 9%;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
   justify-self: flex-start;
