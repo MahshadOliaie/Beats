@@ -1,33 +1,33 @@
 
 
 .studiobudsSlider {
-    background-image: url(../images/studiobuds/hero-studiobudsplus.jpg.large.2x.WebP);
+    background-image: url(../images/studiobuds/hero-studiobudsplus.jpg.large.2x.webp);
     animation: studiobudsSlider 19s infinite ease-in-out;
 }
 
 @keyframes studiobudsSlider {
     17% {
-        background-image: url(../images/studiobuds/Screenshotbuds.WebP);
+        background-image: url(../images/studiobuds/Screenshotbuds.webp);
     }
 
     33% {
-        background-image: url(../images/studiobuds/studiobuds-pdp-apple-music.jpg.medium.2x.WebP);
+        background-image: url(../images/studiobuds/studiobuds-pdp-apple-music.jpg.medium.2x.webp);
     }
 
     50% {
-        background-image: url(../images/studiobuds/studiobudsplus-pdp-p01.jpg.large.2x.WebP);
+        background-image: url(../images/studiobuds/studiobudsplus-pdp-p01.jpg.large.2x.webp);
     }
 
     68% {
-        background-image: url(../images/studiobuds/studiobudsplus-pdp-p10.jpg.large.2x.WebP);
+        background-image: url(../images/studiobuds/studiobudsplus-pdp-p10.jpg.large.2x.webp);
     }
 
     85% {
-        background-image: url(../images/studiobuds/studiobudsplus-pdp-p06.jpg.large.2x.WebP);
+        background-image: url(../images/studiobuds/studiobudsplus-pdp-p06.jpg.large.2x.webp);
     }
 
     100% {
-        background-image: url(../images/studiobuds/hero-studiobudsplus.jpg.large.2x.WebP);
+        background-image: url(../images/studiobuds/hero-studiobudsplus.jpg.large.2x.webp);
     }
 }
 
